@@ -1,6 +1,6 @@
 #================================================
 #   OSDCloud Task Sequence
-#   Windows 10 22H1 Pro en-us Retail
+#   Windows 10 22H2 Pro en-us Retail
 #   No Autopilot
 #   No Office Deployment Tool
 #================================================
@@ -77,7 +77,7 @@ start "Install-Module OSD" /wait PowerShell -NoL -C Install-Module OSD -Force -V
 :: The next line assumes that you have a configuration saved in C:\ProgramData\OSDeploy\OSDeploy.OOBEDeploy.json
 :: start "Start-OOBEDeploy" PowerShell -NoL -C Start-OOBEDeploy
 :: The next line assumes that you do not have a configuration saved in or want to ensure that these are applied
-REM start "Start-OOBEDeploy" PowerShell -NoL -C Start-OOBEDeploy -AddNetFX3 -UpdateDrivers -UpdateWindows
+start "Start-OOBEDeploy" PowerShell -NoL -C Start-OOBEDeploy -AddNetFX3 -UpdateDrivers -UpdateWindows
 
 exit
 '@
