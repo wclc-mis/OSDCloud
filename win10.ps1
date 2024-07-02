@@ -1,4 +1,4 @@
-#to Run, boot OSDCloudUSB, at the PS Prompt: iex (irm win10.wclc.com)
+#to Run, boot OSDCloudUSB or the WinPE, at the PS Prompt: iex (irm win10.wclc.com)
 $ScriptName = 'win10.wclc.com'
 $ScriptVersion = '1.0'
 Write-Host -ForegroundColor Green "$ScriptName $ScriptVersion"
