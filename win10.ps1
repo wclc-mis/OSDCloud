@@ -2,7 +2,7 @@
 $ScriptName = 'win10.wclc.com'
 $ScriptVersion = '1.0'
 Write-Host -ForegroundColor Green "$ScriptName $ScriptVersion"
-#iex (irm functions.garytown.com) #Add custom functions used in Script Hosting in GitHub
+#iex (irm functions.wclc.com) #Add custom functions used in Script Hosting in GitHub
 #iex (irm functions.osdcloud.com) #Add custom fucntions from OSDCloud
 
 # Script start
