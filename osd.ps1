@@ -1,5 +1,5 @@
-#to Run, boot OSDCloudUSB or the WinPE, at the PS Prompt: iex (irm win10.wclc.com)
-$ScriptName = 'win10.wclc.com'
+#to Run, boot OSDCloudUSB or the WinPE, at the PS Prompt: iex (irm osd.wclc.com)
+$ScriptName = 'osd.wclc.com'
 $ScriptVersion = '1.0'
 Write-Host -ForegroundColor Green "$ScriptName $ScriptVersion"
 #iex (irm functions.wclc.com) #Add custom functions used in Script Hosting in GitHub
