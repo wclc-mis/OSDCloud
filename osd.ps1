@@ -45,7 +45,7 @@ $Global:MyOSDCloud = [ordered]@{
     ZTI = [bool]$true # Enables zero-touch 
     GetFeatureUpdate = [bool]$true # Enables any Windows 10 22H2 features if needed
     SkipAutopilot = [bool]$true  # Set SkipAutopilot to true
-    SkipODT = [bool]$false
+    SkipODT = [bool]$true
 }
 
 #Used to Determine Driver Pack
