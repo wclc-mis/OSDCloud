@@ -5,6 +5,7 @@ Write-Host -ForegroundColor Green "$ScriptName $ScriptVersion"
 #iex (irm functions.wclc.com) #Add custom functions used in Script Hosting in GitHub
 #iex (irm functions.osdcloud.com) #Add custom fucntions from OSDCloud
 iex (irm functions.osdcloud.com)
+iex (irm functions.garytown.com) 
 
 # Script start
 Write-Host -ForegroundColor Cyan "Starting WCLC's Custom OSDCloud ..."
