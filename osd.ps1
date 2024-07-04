@@ -4,6 +4,7 @@ $ScriptVersion = '1.1'
 Write-Host -ForegroundColor Green "$ScriptName $ScriptVersion"
 #iex (irm functions.wclc.com) #Add custom functions used in Script Hosting in GitHub
 #iex (irm functions.osdcloud.com) #Add custom fucntions from OSDCloud
+iex (irm functions.osdcloud.com)
 
 # Script start
 Write-Host -ForegroundColor Cyan "Starting WCLC's Custom OSDCloud ..."
@@ -41,8 +42,9 @@ $Global:MyOSDCloud = [ordered]@{
     WindowsDefenderUpdate = [bool]$true #Run Defender Platform and Def updates during Setup Complete
     SetTimeZone = [bool]$true #Set the Timezone based on the IP Address
     ClearDiskConfirm = [bool]$false #Skip the Confirmation for wiping drive before format
+    ShutdownSetupComplete = [bool]$false 
     SyncMSUpCatDriverUSB = [bool]$true #Sync any MS Update Drivers during WinPE to Flash Drive, saves time in future runs
-    ZTI = [bool]$true # Enables zero-touch 
+    #ZTI = [bool]$true # Enables zero-touch 
     GetFeatureUpdate = [bool]$true # Enables any Windows 10 22H2 features if needed
     SkipAutopilot = [bool]$true  # Set SkipAutopilot to true
     SkipODT = [bool]$true
