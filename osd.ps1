@@ -79,6 +79,9 @@ Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation
 Write-host "OSDCloud Process Complete, Running Custom Actions From Script Before Reboot" -ForegroundColor Green
 
 Get-HPDockUpdateDetails -Update -UIExperience Silent
+Enable-AutoTimeZoneUpdate
+Start-WindowsUpdate
+Start-WindowsUpdateDriver
 Invoke-Debloat
 
 
